@@ -10,14 +10,14 @@ router.get('/api/notes', (req, res) => {
         .then((notes) => {
             return res.json(notes);
         })
-    if (err) throw (err);
+    //if (err) throw (err);
 });
 
 router.post('/api/notes', (req, res) => {
     store
         .addNote(req.body)
         .then((note) => res.json(note))
-    if (err) throw (err);
+    //if (err) throw (err);
 });
 
 
